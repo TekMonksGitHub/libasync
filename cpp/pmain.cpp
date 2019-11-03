@@ -42,11 +42,11 @@ void pmain(vector<string> args) {
         cout << "Just wrote something to test.txt" << endl;
     });
 
-    FS::bytes data{}; string s = "Test write 2\n"; for (char c: s) data.push_back((byte)c);
+    FS::bytes data{}; string s = "Test write 2\n"; for (auto c: s) data.push_back((byte)c);
     FS::writeFile(rootPath+"/tests/test2.txt", data, [](auto error) {
         if (error == "") cout << "Just wrote something to test2.txt too" << endl; else cout << error << endl;
 
-        if (error == "") FS::getFileSize(rootPath+"/tests/test2.txt", [](unsigned long size, auto error){
+        if (error == "") FS::getFileSize(rootPath+"/tests/test2.txt", [](auto size, auto error){
             if (error == "") cout << "Size of test2.txt is = " << size << " bytes" << endl; else cout << error << endl;
         });
     });
