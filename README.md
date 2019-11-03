@@ -1,5 +1,7 @@
 # libasync
-Cross platform Async Library for C++ 
+Cross platform Async Library for C++
+
+Coded to comply with C++17 and C++20 standards (https://en.wikipedia.org/wiki/C%2B%2B20). STD classes, no Boost, no pointers.
 
 ![](https://tekmonks.com/images/libasync.jpeg)
 
