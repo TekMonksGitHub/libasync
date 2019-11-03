@@ -37,4 +37,6 @@ Our goal is to produce a simple and comprehensive C++ async library to make it e
 * High performance File IO servers
 * High performance APIs in C++ 
 
+Maybe you want to create the next great asynchronous web server which decimates Nginx ;)  or the next big high performance database, or the next generation CDN server? `libasync` might be a great foundation for this, so you can concentrate on the logic of your next great application, and not the basic C++ plumbing to make it asynchronous and high performance.
+
 Sometimes you just need the raw performance of C++ ;)
