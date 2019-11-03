@@ -1,7 +1,7 @@
 # libasync
 Cross platform Async Library for C++
 
-Coded to comply with C++17 and C++20 standards (https://en.wikipedia.org/wiki/C%2B%2B20). STD classes, no Boost, no pointers.
+Coded to comply with C++17 and C++20 standards (https://en.wikipedia.org/wiki/C%2B%2B20). STD classes, no Boost, no Pointers.
 
 ![](https://tekmonks.com/images/libasync.jpeg)
 
@@ -12,6 +12,16 @@ No comprehensive Async IO library exists for C++. Many exist for Async tasks, or
 * Async CPU Intensive IO
 * Async Network IO
 * Async Extensions
+
+## Why C++20 and No Pointers
+Modern C++ is a beautiful systems language. Our aim is to produce a C++ library coded for the future, with no legacy code or issues. 
+
+Pointers are avoided due to massive security issues they cause, and problems like Buffer Overflows and Code-Injection problems. For example,
+* https://www.vice.com/en_us/article/a3mgxb/the-internet-has-a-huge-cc-problem-and-developers-dont-want-to-deal-with-it
+* http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW386.pdf
+* https://www.theregister.co.uk/2019/07/18/microsoft_rust_security/
+
+Our plan is to avoid pointers all-together. Not just, move to smart pointers. We want to avoid them completely.
 
 ## How to use
 Step 1: Download code  
