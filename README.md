@@ -21,7 +21,7 @@ Pointers are avoided due to massive security issues they cause, and problems lik
 * http://www.cs.kuleuven.be/publicaties/rapporten/cw/CW386.pdf
 * https://www.theregister.co.uk/2019/07/18/microsoft_rust_security/
 
-Our plan is to avoid pointers all-together. Not just, move to smart pointers. libasync is also an experiment to produce a modern C++ runtime library which avoids pointers completely, if possible. 
+Our plan is to avoid pointers all-together. Not just, move to smart pointers. `libasync` is also an experiment to produce a modern C++ runtime library which avoids pointers completely, if possible. 
 
 ## How to use
 Step 1: Download code  
